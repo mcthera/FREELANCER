@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: devflow
+    runtime: python
+    plan: starter
+    buildCommand: python -m py_compile server.py
+    startCommand: python server.py
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: ADMIN_USERNAME
+        value: MAK
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: DEVFLOW_DATABASE_PATH
+        value: /var/data/devflow.db
+      - key: COOKIE_SECURE
+        value: "true"
+    disk:
+      name: devflow-data
+      mountPath: /var/data
+      sizeGB: 1
