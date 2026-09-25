@@ -98,12 +98,12 @@
                     <i class="fa-solid fa-layer-group text-lg"></i>
                 </div>
                 <div>
-                    <h1 class="font-bold text-lg leading-tight tracking-tight">DevFlow <span class="text-xs px-2 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 font-semibold uppercase tracking-wider ml-1">Pro</span></h1>
-                    <p class="text-xs text-slate-500 dark:text-slate-400">Freelance Contract & Workload Organizer</p>
+                    <h1 class="whitespace-nowrap font-bold text-lg leading-tight tracking-tight">DevFlow <span class="hidden text-xs px-2 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 font-semibold uppercase tracking-wider ml-1 sm:inline">Pro</span></h1>
+                    <p class="hidden text-xs text-slate-500 dark:text-slate-400 sm:block">Freelance Contract & Workload Organizer</p>
                 </div>
             </div>
             
-            <div class="flex items-center space-x-3">
+            <div class="flex shrink-0 items-center space-x-1 sm:space-x-3">
                 <button id="themeToggleBtn" class="theme-toggle rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle light and dark mode">
                     <span class="theme-orb" aria-hidden="true">
                         <i class="theme-moon fa-solid fa-moon text-base"></i>
@@ -111,23 +111,23 @@
                     </span>
                     <span class="theme-figure" aria-hidden="true"><span class="theme-figure-head"></span><span class="theme-figure-body"></span><span class="theme-figure-arm"></span><span class="theme-figure-leg"></span></span>
                 </button>
-                <button id="userLogoutBtn" class="px-3 py-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all text-sm font-medium" title="Sign out">
-                    <i class="fa-solid fa-arrow-right-from-bracket mr-1"></i><span>Sign out</span>
+                <button id="userLogoutBtn" class="min-h-11 min-w-11 rounded-xl p-2 sm:px-3 sm:py-2 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all text-sm font-medium" type="button" title="Sign out" aria-label="Sign out">
+                    <i class="fa-solid fa-arrow-right-from-bracket sm:mr-1"></i><span class="hidden sm:inline">Sign out</span>
                 </button>
-                <button id="openAddModalBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl font-medium text-sm shadow-md shadow-indigo-500/20 transition-all flex items-center space-x-2 active:scale-95">
+                <button id="openAddModalBtn" class="min-h-11 min-w-11 justify-center bg-indigo-600 hover:bg-indigo-700 text-white px-3 sm:px-4 py-2 rounded-xl font-medium text-sm shadow-md shadow-indigo-500/20 transition-all flex items-center space-x-2 active:scale-95" type="button" title="New contract" aria-label="New contract">
                     <i class="fa-solid fa-plus"></i>
-                    <span>New Contract</span>
+                    <span class="hidden sm:inline">New Contract</span>
                 </button>
             </div>
         </div>
     </header>
 
-    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 space-y-5 sm:space-y-8">
         
         <!-- Summary Stats Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             <!-- Total Contracts -->
-            <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition-all">
+            <div class="bg-white dark:bg-slate-900 p-3 sm:p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition-all">
                 <div class="flex items-center justify-between">
                     <span class="text-sm font-medium text-slate-500 dark:text-slate-400">Total Contracts</span>
                     <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950/50 text-blue-600 dark:text-blue-400 flex items-center justify-center">
@@ -141,7 +141,7 @@
             </div>
 
             <!-- Active Projects -->
-            <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition-all">
+            <div class="bg-white dark:bg-slate-900 p-3 sm:p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition-all">
                 <div class="flex items-center justify-between">
                     <span class="text-sm font-medium text-slate-500 dark:text-slate-400">In Progress</span>
                     <div class="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-950/50 text-amber-600 dark:text-amber-400 flex items-center justify-center">
@@ -155,7 +155,7 @@
             </div>
 
             <!-- Completed Projects -->
-            <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition-all">
+            <div class="bg-white dark:bg-slate-900 p-3 sm:p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition-all">
                 <div class="flex items-center justify-between">
                     <span class="text-sm font-medium text-slate-500 dark:text-slate-400">Completed</span>
                     <div class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
@@ -169,7 +169,7 @@
             </div>
 
             <!-- Total Revenue Potential -->
-            <div class="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition-all">
+            <div class="bg-white dark:bg-slate-900 p-3 sm:p-5 rounded-2xl border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-md transition-all">
                 <div class="flex items-center justify-between">
                     <span class="text-sm font-medium text-slate-500 dark:text-slate-400">Expected Revenue</span>
                     <div class="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
